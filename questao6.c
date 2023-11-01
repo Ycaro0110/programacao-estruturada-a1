@@ -1,3 +1,5 @@
+/*6. Ordene as letras em ordem alfabética.*/
+
 #include <stdio.h>
 
 void main()
@@ -5,7 +7,7 @@ void main()
     int i, j;
     char palavra[50], copia;
 
-    printf("Digite uma palavra: ");
+    printf("Digite 10 caracteres: ");
 
     scanf("%s", palavra);
 

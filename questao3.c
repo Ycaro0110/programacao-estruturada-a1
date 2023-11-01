@@ -1,3 +1,5 @@
+/*3. Alterar cada valor do vetor pelo próximo número primo depois daquele valor.*/
+
 #include <stdio.h>
 
 int main()

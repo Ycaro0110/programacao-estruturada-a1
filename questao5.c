@@ -1,3 +1,5 @@
+/*5. Faça com que o vetor só possua números ímpares (subtraindo 1 apenas dos valores pares).*/
+
 #include <stdio.h>
 
 void main()
@@ -12,11 +14,11 @@ void main()
         scanf(" %d", &vetor[i]);
     }
 
-    for (i = 0; i < 11; i++) 
+    for (i = 0; i < 11; i++)
     {
         if (vetor[i] % 2 == 0)
         {
-            vetor[i] -= - 1;
+            vetor[i] -= -1;
         }
     }
 

@@ -1,3 +1,5 @@
+/*7. Mostre quantas consoantes distintas aparecem na palavra.*/
+
 #include <stdio.h>
 
 int main()
@@ -20,6 +22,17 @@ int main()
         if (c >= 'a' && c <= 'z' && (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u'))
         {
             index = c - 'a';
+
+            if (consoantesContadas[index] == 0)
+            {
+                consoantesDistintas++;
+                consoantesContadas[index] = 1;
+            }
+        }
+        
+        if (c >= 'A' && c <= 'Z' && (c != 'A' && c != 'E' && c != 'I' && c != 'O' && c != 'U'))
+        {
+            index = c - 'A';
 
             if (consoantesContadas[index] == 0)
             {

@@ -1,14 +1,18 @@
+/*1. Peça ao usuário que digite 2 números referentes a duas posições do vetor. Calcule a média dos números
+entre as posições digitadas (inclusive as digitadas).*/
+
 #include <stdio.h>
 
 void main()
 {
 
-    int vetor[11], i, posicao1, posicao2,contador = 0;
+    int vetor[11], i, posicao1, posicao2, contador = 0;
     float media;
     printf("Insira 11 valores: \n");
- 
+
     for (i = 0; i < 11; i++)
-    {   printf("%d: ", i);
+    {
+        printf("%d: ", i);
         scanf(" %d", &vetor[i]);
     }
 

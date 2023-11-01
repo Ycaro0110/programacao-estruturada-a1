@@ -1,3 +1,5 @@
+/*2. Mostre o menor e o maior valor do vetor e a quantidade de números positivos e negativos.*/
+
 #include <stdio.h>
 
 void main()

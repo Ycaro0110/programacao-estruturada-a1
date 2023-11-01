@@ -1,11 +1,15 @@
+/*9. Mostre qual letra aparece mais vezes.*/
+
 #include <stdio.h>
+
 void main()
 {
+
     char palavra[50], caractere, letraMaisFrequente;
     int frequencia[26] = {0}, i, indice, maxFrequencia = 0;
     printf("Digite uma palavra apenas com letras minusculas: ");
     scanf("%s", palavra);
-    
+
     for (i = 0; palavra[i] != '\0'; i++)
     {
         caractere = palavra[i];

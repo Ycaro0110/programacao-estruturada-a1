@@ -1,3 +1,6 @@
+/*10. Preencha uma matriz 5x5 de inteiros com números digitados pelo usuário e exiba a média da diagonal
+secundária e a soma da diagonal principal.*/
+
 #include <stdio.h>
 
 void main()
