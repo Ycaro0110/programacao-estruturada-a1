@@ -7,7 +7,7 @@ void main()
     int i, j;
     char palavra[50], copia;
 
-    printf("Digite 10 caracteres: ");
+    printf("Digite uma palavra: ");
 
     scanf("%s", palavra);
 
