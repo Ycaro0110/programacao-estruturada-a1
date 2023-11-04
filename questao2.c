@@ -5,7 +5,7 @@
 void main()
 {
 
-    int vetor[11], i, contaPositivo = 0, contaNegativo = 0, maior = 0, menor = 0;
+    int vetor[11], i, contaPositivo = 0, contaNegativo = 0, maior, menor;
     printf("Insira 11 valores: \n");
 
     for (i = 0; i < 11; i++)
@@ -14,6 +14,9 @@ void main()
         scanf(" %d", &vetor[i]);
     }
 
+    maior = vetor[0];
+    menor = vetor[0];
+    
     for (i = 0; i < 11; i++)
     {
         if (vetor[i] > 0)
