@@ -16,7 +16,7 @@ void main()
 
     maior = vetor[0];
     menor = vetor[0];
-    
+
     for (i = 0; i < 11; i++)
     {
         if (vetor[i] > 0)
@@ -27,10 +27,7 @@ void main()
         {
             contaNegativo++;
         }
-    }
 
-    for (i = 0; i < 11; i++)
-    {
         if (vetor[i] > maior)
         {
             maior = vetor[i];
