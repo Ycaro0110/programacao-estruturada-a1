@@ -15,10 +15,19 @@ int main()
         tamanho++;
     }
 
+ for (i = 0; i < tamanho; i++)
+    {
+        if (palavra[i] >= 65 && palavra[i] <= 90)
+        {
+            palavra[i] += 32;
+        }
+    }
+
     for (int i = 0; i < tamanho; i++)
     {
         char c = palavra[i];
-
+       
+        
         if (c >= 'a' && c <= 'z' && (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u'))
         {
             index = c - 'a';
@@ -29,17 +38,7 @@ int main()
                 consoantesContadas[index] = 1;
             }
         }
-        
-        if (c >= 'A' && c <= 'Z' && (c != 'A' && c != 'E' && c != 'I' && c != 'O' && c != 'U'))
-        {
-            index = c - 'A';
-
-            if (consoantesContadas[index] == 0)
-            {
-                consoantesDistintas++;
-                consoantesContadas[index] = 1;
-            }
-        }
+       
     }
  
     printf("Quantidade de consoantes distintas na palavra: %d\n", consoantesDistintas);
