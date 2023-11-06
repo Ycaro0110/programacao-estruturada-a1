@@ -7,9 +7,17 @@ void main()
 
     char palavra[50], caractere, letraMaisFrequente;
     int frequencia[26] = {0}, i, indice, maxFrequencia = 0;
-    printf("Digite uma palavra apenas com letras minusculas: ");
+    printf("Digite uma palavra: ");
     scanf("%s", palavra);
-
+    
+     for (i = 0; i < palavra[i]; i++)
+    {
+        if (palavra[i] >= 'A' && palavra[i] <= 'Z')
+        {
+            palavra[i] += 32;
+        }
+    }
+    
     for (i = 0; palavra[i] != '\0'; i++)
     {
         caractere = palavra[i];
