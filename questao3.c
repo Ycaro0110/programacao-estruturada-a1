@@ -1,51 +1,44 @@
-/*3. Alterar cada valor do vetor pelo próximo número primo depois daquele valor.*/
-
 #include <stdio.h>
 
-int main()
+void main()
 {
-    int vetor[11], i;
 
-    printf("Insira 11 valores: \n");
+    int x, d = 0, j;
 
-    for (i = 0; i < 11; i++)
+    // contagem de divisores
+
+    printf("Digite 11 numeros: \n");
+
+    int vetor[11];
+
+    for (int y = 0; y < 11; y++)
     {
-        printf("Vetor %d: ", i);
-        scanf("%d", &vetor[i]);
+        scanf("%d", &vetor[y]);
     }
 
-    for (i = 0; i < 11; i++)
+    for (int y = 0; y < 11; y++)
     {
-        int num = vetor[i] + 1; // Começa com o próximo número após o valor atual
-
-        while (1)
+        do
         {
-            int is_prime = 1;
+            vetor[y]++;
+            d = 0;
 
-            for (int x = 2; x * x <= num; x++)
+            for (int i = vetor[y]; i > 0; i--)
             {
-                if (num % x == 0)
+                if (vetor[y] % i == 0)
                 {
-                    is_prime = 0; // Não é primo
-                    break;
+                    d++;
                 }
             }
 
-            if (is_prime)
-            {
-                vetor[i] = num; // substitui pelo próximo número primo
-                break;
-            }
+        } while (d != 2);
 
-            num++; // tenta o próximo número
-        }
+        vetor[y] = vetor[y];
     }
 
-    printf("Vetor com próximos números primos:\n");
-    for (i = 0; i < 11; i++)
+    for (int y = 0; y < 11; y++)
     {
-        printf("%d\n", vetor[i]);
+        printf("%d ", vetor[y]);
     }
-
-    return 0;
 }
+
